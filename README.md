@@ -137,8 +137,10 @@ verdict: verified — 3 packages: 3 verified
 session: 2 reviews, 7 registry lookups, 1 answered from memory
 ```
 
-The snapshot's names, first-publish dates and latest versions for the real packages are what the
-registries returned on 2026-10-29; `fastapi-jwt-shield` is made up for the demo.
+The snapshot's first-publish dates and latest versions for the real packages are what the registries
+returned on 2026-10-29 (1.0.0 shipped with some from memory; 1.0.1 corrected them), with the version lists
+cut down to the ones the scenarios use. `fastapi-jwt-shield` is made up for the demo; it was not on PyPI
+that day, and neither was `reqeusts`.
 `swift run PackageClaimDemo --live` asks the real registries instead. Its run on 2026-10-29 took 3.4 s
 and is in [`Screenshots/live-check.txt`](Screenshots/live-check.txt): `requests`, `lodash@4.17.21` and
 `serde` exist, `request` is deprecated, and a made-up name is not on PyPI.
