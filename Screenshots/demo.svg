@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1078" viewBox="0 0 1120 1078">
+<rect width="1120" height="1078" rx="10" fill="#0f172a"/>
+<circle cx="22" cy="20" r="6" fill="#ef4444"/><circle cx="42" cy="20" r="6" fill="#f59e0b"/><circle cx="62" cy="20" r="6" fill="#22c55e"/>
+<text x="560" y="25" fill="#94a3b8" font-family="Menlo, monospace" font-size="13" text-anchor="middle">$&#160;swift&#160;run&#160;PackageClaimDemo&#160;&#160;&#160;(registry&#160;snapshot&#160;of&#160;2026-10-29,&#160;fixed&#160;clock;&#160;abridged)</text>
+<text x="20" y="60" fill="#7dd3fc" font-family="Menlo, monospace" font-size="13">==&#160;1.&#160;A&#160;misspelled&#160;name</text>
+<text x="20" y="84" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">Q:&#160;How&#160;do&#160;I&#160;make&#160;HTTP&#160;calls&#160;from&#160;Python?</text>
+<text x="20" y="108" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;```bash</text>
+<text x="20" y="132" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;pip&#160;install&#160;reqeusts</text>
+<text x="20" y="156" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;```</text>
+<text x="20" y="180" fill="#fca5a5" font-family="Menlo, monospace" font-size="13">verdict:&#160;wrong&#160;&#8212;&#160;1&#160;package:&#160;1&#160;wrong&#160;(reqeusts)</text>
+<text x="20" y="204" fill="#fca5a5" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;PyPI&#160;&#160;&#160;&#160;&#160;&#160;reqeusts&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;FOUND&#160;(near&#160;requests)</text>
+<text x="20" y="228" fill="#7dd3fc" font-family="Menlo, monospace" font-size="13">==&#160;2.&#160;The&#160;right&#160;name,&#160;the&#160;wrong&#160;installer</text>
+<text x="20" y="252" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">Q:&#160;How&#160;do&#160;I&#160;deep-clone&#160;an&#160;object&#160;in&#160;Python?</text>
+<text x="20" y="276" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;Install&#160;it&#160;with&#160;`pip&#160;install&#160;lodash`,&#160;then&#160;`import&#160;lodash`.</text>
+<text x="20" y="300" fill="#fca5a5" font-family="Menlo, monospace" font-size="13">verdict:&#160;wrong&#160;&#8212;&#160;1&#160;package:&#160;1&#160;wrong&#160;(lodash)</text>
+<text x="20" y="324" fill="#fca5a5" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;PyPI&#160;&#160;&#160;&#160;&#160;&#160;lodash&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;FOUND&#160;(on&#160;npm)</text>
+<text x="20" y="348" fill="#7dd3fc" font-family="Menlo, monospace" font-size="13">==&#160;4.&#160;A&#160;package&#160;registered&#160;six&#160;days&#160;ago</text>
+<text x="20" y="372" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">Q:&#160;How&#160;do&#160;I&#160;add&#160;JWT&#160;auth&#160;to&#160;FastAPI?</text>
+<text x="20" y="396" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;```bash</text>
+<text x="20" y="420" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;pip&#160;install&#160;fastapi&#160;pyjwt&#160;fastapi-jwt-shield</text>
+<text x="20" y="444" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;```</text>
+<text x="20" y="468" fill="#fcd34d" font-family="Menlo, monospace" font-size="13">verdict:&#160;caution&#160;&#8212;&#160;3&#160;packages:&#160;1&#160;caution&#160;(fastapi-jwt-shield),&#160;2&#160;verified</text>
+<text x="20" y="492" fill="#86efac" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;PyPI&#160;&#160;&#160;&#160;&#160;&#160;fastapi&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;exists</text>
+<text x="20" y="516" fill="#86efac" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;PyPI&#160;&#160;&#160;&#160;&#160;&#160;pyjwt&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;exists</text>
+<text x="20" y="540" fill="#fcd34d" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;PyPI&#160;&#160;&#160;&#160;&#160;&#160;fastapi-jwt-shield&#160;&#160;&#160;&#160;&#160;first&#160;published&#160;6&#160;days&#160;ago</text>
+<text x="20" y="564" fill="#7dd3fc" font-family="Menlo, monospace" font-size="13">==&#160;5.&#160;A&#160;package.json&#160;with&#160;a&#160;deprecated&#160;package&#160;and&#160;a&#160;version&#160;that&#160;does&#160;not&#160;exist</text>
+<text x="20" y="588" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">Q:&#160;Give&#160;me&#160;a&#160;package.json&#160;for&#160;a&#160;small&#160;HTTP&#160;client.</text>
+<text x="20" y="612" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;```json</text>
+<text x="20" y="636" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;{</text>
+<text x="20" y="660" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;&#160;&#160;"dependencies":&#160;{&#160;"request":&#160;"^2.88.2",&#160;"axios":&#160;"1.13.1",&#160;"lodash":&#160;"5.0.0"&#160;}</text>
+<text x="20" y="684" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;}</text>
+<text x="20" y="708" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;```</text>
+<text x="20" y="732" fill="#fca5a5" font-family="Menlo, monospace" font-size="13">verdict:&#160;wrong&#160;&#8212;&#160;3&#160;packages:&#160;1&#160;wrong&#160;(lodash@5.0.0),&#160;1&#160;caution&#160;(request),&#160;1&#160;verified</text>
+<text x="20" y="756" fill="#fcd34d" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;npm&#160;&#160;&#160;&#160;&#160;&#160;&#160;request&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;deprecated</text>
+<text x="20" y="780" fill="#86efac" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;npm&#160;&#160;&#160;&#160;&#160;&#160;&#160;axios@1.13.1&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;exists</text>
+<text x="20" y="804" fill="#fca5a5" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;npm&#160;&#160;&#160;&#160;&#160;&#160;&#160;lodash@5.0.0&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NO&#160;VERSION&#160;5.0.0&#160;(latest&#160;4.18.1)</text>
+<text x="20" y="828" fill="#7dd3fc" font-family="Menlo, monospace" font-size="13">==&#160;8b.&#160;The&#160;rewrite&#160;after&#160;the&#160;feedback</text>
+<text x="20" y="852" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">Q:&#160;These&#160;packages&#160;in&#160;your&#160;answer&#160;need&#160;fixing:&#160;`reqeusts`&#160;(`pip&#160;install`):&#160;no&#160;package&#160;by&#160;that&#160;name&#160;on&#160;PyPI;&#160;did&#160;you&#160;mean&#160;`requests`?&#160;</text>
+<text x="20" y="876" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;```bash</text>
+<text x="20" y="900" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;pip&#160;install&#160;fastapi&#160;requests==2.32.3&#160;pyjwt</text>
+<text x="20" y="924" fill="#e2e8f0" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;|&#160;```</text>
+<text x="20" y="948" fill="#86efac" font-family="Menlo, monospace" font-size="13">verdict:&#160;verified&#160;&#8212;&#160;3&#160;packages:&#160;3&#160;verified</text>
+<text x="20" y="972" fill="#86efac" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;PyPI&#160;&#160;&#160;&#160;&#160;&#160;fastapi&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;exists</text>
+<text x="20" y="996" fill="#86efac" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;PyPI&#160;&#160;&#160;&#160;&#160;&#160;requests==2.32.3&#160;&#160;&#160;&#160;&#160;&#160;&#160;exists</text>
+<text x="20" y="1020" fill="#86efac" font-family="Menlo, monospace" font-size="13">&#160;&#160;&#160;PyPI&#160;&#160;&#160;&#160;&#160;&#160;pyjwt&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;exists</text>
+<text x="20" y="1044" fill="#86efac" font-family="Menlo, monospace" font-size="13">session:&#160;2&#160;reviews,&#160;7&#160;registry&#160;lookups,&#160;1&#160;answered&#160;from&#160;memory</text>
+</svg>

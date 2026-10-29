@@ -1,0 +1,99 @@
+PackageClaimKit demo — registry snapshot of 2026-10-29, clock fixed at 2026-10-29
+
+== 1. A misspelled name
+Q: How do I make HTTP calls from Python?
+   | ```bash
+   | pip install reqeusts
+   | ```
+verdict: wrong — 1 package: 1 wrong (reqeusts)
+   PyPI      reqeusts               NOT FOUND (near requests)
+note: `reqeusts` (`pip install`): no package by that name on PyPI; did you mean `requests`? A name that does not exist fails to install today, and anyone can register it tomorrow (slopsquatting): check names before running the commands.
+feedback: These packages in your answer need fixing: `reqeusts` (`pip install`): no package by that name on PyPI; did you mean `requests`? Rewrite the install commands and manifests with packages and versions that exist on their registry, or say plainly that you are not sure of a name. Do not invent package names.
+
+== 2. The right name, the wrong installer
+Q: How do I deep-clone an object in Python?
+   | Install it with `pip install lodash`, then `import lodash`.
+verdict: wrong — 1 package: 1 wrong (lodash)
+   PyPI      lodash                 NOT FOUND (on npm)
+note: `lodash` (`pip install`): no package by that name on PyPI; it is a package on npm, so the command uses the wrong tool. A name that does not exist fails to install today, and anyone can register it tomorrow (slopsquatting): check names before running the commands.
+feedback: These packages in your answer need fixing: `lodash` (`pip install`): no package by that name on PyPI; it is a package on npm, so the command uses the wrong tool. Rewrite the install commands and manifests with packages and versions that exist on their registry, or say plainly that you are not sure of a name. Do not invent package names.
+
+== 3. A version that was never released
+Q: Which requests version supports async?
+   | ```bash
+   | pip install requests==3.0.0  # the async-native release
+   | ```
+verdict: wrong — 1 package: 1 wrong (requests==3.0.0)
+   PyPI      requests==3.0.0        NO VERSION 3.0.0 (latest 2.34.2)
+note: `requests==3.0.0` (`pip install`): PyPI has no version 3.0.0 (the latest is 2.34.2). Pin a version the registry lists, or leave the version out.
+feedback: These packages in your answer need fixing: `requests==3.0.0` (`pip install`): PyPI has no version 3.0.0 (the latest is 2.34.2). Rewrite the install commands and manifests with packages and versions that exist on their registry, or say plainly that you are not sure of a name. Do not invent package names.
+
+== 4. A package registered six days ago
+Q: How do I add JWT auth to FastAPI?
+   | ```bash
+   | pip install fastapi pyjwt fastapi-jwt-shield
+   | ```
+verdict: caution — 3 packages: 1 caution (fastapi-jwt-shield), 2 verified
+   PyPI      fastapi                exists
+   PyPI      pyjwt                  exists
+   PyPI      fastapi-jwt-shield     first published 6 days ago
+note: `fastapi-jwt-shield` (`pip install`): was first published 6 days ago. Look at who published a new or look-alike package before installing it.
+
+== 5. A package.json with a deprecated package and a version that does not exist
+Q: Give me a package.json for a small HTTP client.
+   | ```json
+   | {
+   |   "dependencies": { "request": "^2.88.2", "axios": "1.13.1", "lodash": "5.0.0" }
+   | }
+   | ```
+verdict: wrong — 3 packages: 1 wrong (lodash@5.0.0), 1 caution (request), 1 verified
+   npm       request                deprecated
+   npm       axios@1.13.1           exists
+   npm       lodash@5.0.0           NO VERSION 5.0.0 (latest 4.18.1)
+note: `lodash@5.0.0` (in package.json): npm has no version 5.0.0 (the latest is 4.18.1). `request` (in package.json): is deprecated: request has been deprecated, see https://github.com/request/request/issues/3142. Pin a version the registry lists, or leave the version out. Prefer a maintained replacement for a deprecated package.
+feedback: These packages in your answer need fixing: `request` (in package.json): is deprecated: request has been deprecated, see https://github.com/request/request/issues/3142. `lodash@5.0.0` (in package.json): npm has no version 5.0.0 (the latest is 4.18.1). Rewrite the install commands and manifests with packages and versions that exist on their registry, or say plainly that you are not sure of a name. Do not invent package names.
+
+== 6. Everything checks out
+Q: Set up a Rust service with a web front end.
+   | ```toml
+   | [dependencies]
+   | serde = { version = "1", features = ["derive"] }
+   | tokio = "=1.48.0"
+   | ```
+   | Then `npm create vite@latest web` for the front end and `uvx ruff check .` before you commit.
+verdict: verified — 4 packages: 4 verified
+   crates.io serde                  exists
+   crates.io tokio@1.48.0           exists
+   npm       create-vite            exists
+   PyPI      ruff                   exists
+
+== 7. A registry that cannot be reached
+Q: Which crates do I need?
+   | `cargo add serde tokio`
+verdict: unchecked — 2 packages: 2 not checked (serde, tokio)
+   crates.io serde                  not checked: crates.io timed out
+   crates.io tokio                  not checked: crates.io timed out
+
+== 8a. A conversation: the first answer
+Q: Add authenticated HTTP calls to my FastAPI app.
+   | ```bash
+   | pip install fastapi reqeusts fastapi-jwt-shield
+   | ```
+verdict: wrong — 3 packages: 1 wrong (reqeusts), 1 caution (fastapi-jwt-shield), 1 verified
+   PyPI      fastapi                exists
+   PyPI      reqeusts               NOT FOUND (near requests)
+   PyPI      fastapi-jwt-shield     first published 6 days ago
+note: `reqeusts` (`pip install`): no package by that name on PyPI; did you mean `requests`? `fastapi-jwt-shield` (`pip install`): was first published 6 days ago. A name that does not exist fails to install today, and anyone can register it tomorrow (slopsquatting): check names before running the commands. Look at who published a new or look-alike package before installing it.
+feedback: These packages in your answer need fixing: `reqeusts` (`pip install`): no package by that name on PyPI; did you mean `requests`? Rewrite the install commands and manifests with packages and versions that exist on their registry, or say plainly that you are not sure of a name. Do not invent package names.
+
+== 8b. The rewrite after the feedback
+Q: These packages in your answer need fixing: `reqeusts` (`pip install`): no package by that name on PyPI; did you mean `requests`? Rewrite the install commands and manifests with packages and versions that exist on their registry, or say plainly that you are not sure of a name. Do not invent package names.
+   | ```bash
+   | pip install fastapi requests==2.32.3 pyjwt
+   | ```
+verdict: verified — 3 packages: 3 verified
+   PyPI      fastapi                exists
+   PyPI      requests==2.32.3       exists
+   PyPI      pyjwt                  exists
+
+session: 2 reviews, 7 registry lookups, 1 answered from memory

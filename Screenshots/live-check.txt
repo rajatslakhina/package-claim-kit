@@ -1,0 +1,17 @@
+# swift run PackageClaimDemo --live, 2026-10-29 (live registries; output changes as they do)
+== Live: the public registries, today
+Q: (live lookup)
+   | ```bash
+   | pip install requests reqeusts-fastclient-zz
+   | npm i lodash@4.17.21 request
+   | cargo add serde
+   | ```
+verdict: wrong — 5 packages: 1 wrong (reqeusts-fastclient-zz), 1 caution (request), 3 verified
+   PyPI      requests               exists
+   PyPI      reqeusts-fastclient-zz NOT FOUND
+   npm       lodash@4.17.21         exists
+   npm       request                deprecated
+   crates.io serde                  exists
+note: `reqeusts-fastclient-zz` (`pip install`): no package by that name on PyPI. `request` (`npm i`): is deprecated: request has been deprecated, see https://github.com/request/request/issues/3142. A name that does not exist fails to install today, and anyone can register it tomorrow (slopsquatting): check names before running the commands. Prefer a maintained replacement for a deprecated package.
+feedback: These packages in your answer need fixing: `reqeusts-fastclient-zz` (`pip install`): no package by that name on PyPI. `request` (`npm i`): is deprecated: request has been deprecated, see https://github.com/request/request/issues/3142. Rewrite the install commands and manifests with packages and versions that exist on their registry, or say plainly that you are not sure of a name. Do not invent package names.
+
